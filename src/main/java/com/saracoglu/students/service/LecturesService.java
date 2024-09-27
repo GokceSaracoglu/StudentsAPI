@@ -5,7 +5,7 @@ import com.saracoglu.students.model.entitiy.Students;
 import com.saracoglu.students.model.entitiy.StudentsToLectures;
 import com.saracoglu.students.repository.LectureRepository;
 import com.saracoglu.students.repository.StudentRepository;
-import com.saracoglu.students.repository.StudentsToLectureRepository;
+import com.saracoglu.students.repository.StudentsToLecturesRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -14,10 +14,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 import java.util.Optional;
 
 @Service
-public class StudentsToLectureService {
+public class LecturesService {
 
     @Autowired
-    private StudentsToLectureRepository studentsToLectureRepository;
+    private StudentsToLecturesRepository studentsToLectureRepository;
     @Autowired
     private StudentRepository studentRepository;
     @Autowired
